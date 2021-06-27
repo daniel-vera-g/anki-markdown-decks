@@ -1,0 +1,21 @@
+{
+  "name": "anki-markdown-decks",
+  "version": "1.0.0",
+  "description": "Anki markdown decks template",
+  "main": "index.js",
+  "scripts": {
+    "gen-europe": "mdanki --deck europe-capitals ./decks/european-capitals/ ./bin/europe.apkg",
+    "gen-south-america": "mdanki --deck south-america-capitals ./decks/south-american-capitals/ ./bin/south-america.apkg",
+    "prettier": "prettier --check .",
+    "format": "prettier --write .",
+    "lint": "markdownlint '**/*.md' --ignore node_modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "markdownlint-cli": "^0.27.1",
+    "mdanki": "^1.0.2",
+    "prettier": "^2.3.2"
+  }
+}

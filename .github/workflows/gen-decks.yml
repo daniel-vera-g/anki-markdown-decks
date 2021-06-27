@@ -1,0 +1,39 @@
+name: Generate Anki decks
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  gen-europe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Generate europe capital deck
+        run: |
+          npm install
+          npm run gen-europe
+      - name: Upload europe deck
+        uses: actions/upload-artifact@v2
+        with:
+          name: Europe deck
+          path: ./bin/europe.apkg
+  gen-south-america:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Generate south america capitals deck
+        run: |
+          npm install
+          npm run gen-south-america
+      - name: Upload south america deck
+        uses: actions/upload-artifact@v2
+        with:
+          name: South america deck
+          path: ./bin/south-america.apkg
