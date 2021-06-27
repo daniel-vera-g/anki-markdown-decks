@@ -3,7 +3,6 @@
 [![Check code quality](https://github.com/daniel-vera-g/anki-markdown-decks/actions/workflows/code-quality.yml/badge.svg)](https://github.com/daniel-vera-g/anki-markdown-decks/actions/workflows/code-quality.yml)
 [![Generate Anki decks](https://github.com/daniel-vera-g/anki-markdown-decks/actions/workflows/gen-decks.yml/badge.svg)](https://github.com/daniel-vera-g/anki-markdown-decks/actions/workflows/gen-decks.yml)
 
-
 > Template to use markdown as markup language for Anki decks
 
 - Uses: [mdanki](https://github.com/ashlinchak/mdanki)
