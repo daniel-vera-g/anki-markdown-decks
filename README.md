@@ -8,7 +8,7 @@
 - Uses: [mdanki](https://github.com/ashlinchak/mdanki)
 - For card syntax or image, code, LaTeX support and more please refer to
   [mdanki README](https://github.com/ashlinchak/mdanki/blob/master/README.md)
-- `mdanki` as some limitations. See: the [Limitation and alternatives](Limitation-and-alternatives) section for next
+- `mdanki` as some limitations. See: the [Limitation and alternatives](#Limitation-and-alternatives) section for next
   steps/alternatives.
 
 ## Usage
