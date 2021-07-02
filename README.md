@@ -8,6 +8,8 @@
 - Uses: [mdanki](https://github.com/ashlinchak/mdanki)
 - For card syntax or image, code, LaTeX support and more please refer to
   [mdanki README](https://github.com/ashlinchak/mdanki/blob/master/README.md)
+- `mdanki` as some limitations. See: the [Limitation and alternatives](Limitation-and-alternatives) section for next
+  steps/alternatives.
 
 ## Usage
 
@@ -42,9 +44,16 @@ This template comes with 2 Pipelines:
 **NOTE:** You will need to customize the `.github/workflows/gen-decks.yml` pipeline when you add your custom decks,
 remove the current, or want to have your decks generated.
 
-## Other interesting integrations
+## Limitation and alternatives
 
-There are other interesting integrations to keep in mind:
+Using `mdanki` has some limitations. F.ex:
+
+1. Duplicating cards when re-importing deck: <https://github.com/ashlinchak/mdanki/issues/8>
+2. Warnings on build: <https://github.com/ashlinchak/mdanki/issues/12>
+3. Having a probably wrong config?: <https://github.com/daniel-vera-g/anki-markdown-decks/issues/2>
+
+Due to this issues, I plan to change the underlying dependency or writing an own converter in the future.  
+If those issues are to much of a deal breaker, you can check out other interesting integrations:
 
 - Directly sync decks with Anki locally: <https://github.com/Pseudonium/Obsidian_to_Anki>
 - Interesting python lib to generate Anki decks programmatically: <https://github.com/kerrickstaley/genanki>
