@@ -4,8 +4,8 @@
   "description": "Anki markdown decks template",
   "main": "index.js",
   "scripts": {
-    "gen-europe": "mdanki --deck europe-capitals ./decks/european-capitals/ ./bin/europe.apkg",
-    "gen-south-america": "mdanki --deck south-america-capitals ./decks/south-american-capitals/ ./bin/south-america.apkg",
+    "gen-europe": "mdanki --config config/config.json --deck europe-capitals ./decks/european-capitals/ ./bin/europe.apkg",
+    "gen-south-america": "mdanki --config config/config.json --deck south-america-capitals ./decks/south-american-capitals/ ./bin/south-america.apkg",
     "prettier": "prettier --check .",
     "format": "prettier --write .",
     "lint": "markdownlint '**/*.md' --ignore node_modules"
