@@ -4,8 +4,8 @@
   "description": "Anki markdown decks template",
   "main": "index.js",
   "scripts": {
-    "gen-europe": "mdanki --config config/config.json --deck europe-capitals ./decks/european-capitals/ ./bin/europe.apkg",
-    "gen-south-america": "mdanki --config config/config.json --deck south-america-capitals ./decks/south-american-capitals/ ./bin/south-america.apkg",
+    "gen-europe": "md2apkg -n europe-capitals -i ./decks/european-capitals/*.md -o ./bin/europe.apkg",
+    "gen-south-america": "md2apkg -n south-america-capitals -i ./decks/south-american-capitals/*.md -o ./bin/south-america.apkg",
     "prettier": "prettier --check .",
     "format": "prettier --write .",
     "lint": "markdownlint '**/*.md' --ignore node_modules"
@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "markdownlint-cli": "^0.27.1",
-    "mdanki": "^1.0.2",
+    "md2apkg": "^1.1.2",
     "prettier": "^2.3.2"
   }
 }
