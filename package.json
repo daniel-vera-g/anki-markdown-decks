@@ -8,7 +8,8 @@
     "gen-south-america": "md2apkg -n south-america-capitals -i ./decks/south-american-capitals/*.md -o ./bin/south-america.apkg",
     "prettier": "prettier --check .",
     "format": "prettier --write .",
-    "lint": "markdownlint '**/*.md' --ignore node_modules"
+    "lint": "markdownlint '**/*.md' --ignore node_modules",
+    "postinstall": "cp node_modules/sql.js/js/sql-memory-growth.js node_modules/sql.js/js/sql.js",
   },
   "keywords": [],
   "author": "",
