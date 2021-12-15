@@ -9,7 +9,7 @@
     "prettier": "prettier --check .",
     "format": "prettier --write .",
     "lint": "markdownlint '**/*.md' --ignore node_modules",
-    "postinstall": "cp node_modules/sql.js/js/sql-memory-growth.js node_modules/sql.js/js/sql.js",
+    "postinstall": "cp node_modules/sql.js/js/sql-memory-growth.js node_modules/sql.js/js/sql.js"
   },
   "keywords": [],
   "author": "",
